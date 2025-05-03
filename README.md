@@ -9,8 +9,8 @@ This project is a simple RAG (Retrieval-Augmented Generation) pipeline that allo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/NjugunaBrian/rag-app.git
-cd rag-app
+git clone https://github.com/NjugunaBrian/api-rag-app.git
+cd api-rag-app
 ```
 
 2. Install Requirements:
@@ -42,26 +42,13 @@ rag-app/
 <br/>
 
 ## :rocket: Usage
-### :green_circle: Interactive Mode
+### :green_circle: Run the API Server
 ```bash
 python app.py
 ```
+Access the API at http://localhost:8000
+Swagger UI at http://localhost:8000/docs
 
-### :mag: Run With a Specific Query
-Process a single query:
-```bash
-python app.py --query "What are the main advantages of RAG systems?"
-```
-
-### :recycle: Rebuild the Document Index
-Use this if you've added/removed/changed documents in the data/ folder:
-```bash
-python app.py --rebuild
-```
-You can also rebuild and query at the same time:
-```bash
-python app.py --rebuild --query "Summarize the contents of the new files."
-```
 
 ## :hammer_and_wrench: Project Structure
 ```bash
